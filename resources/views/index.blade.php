@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinasi Wisata Keluarga</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    @vite('resources/css/app.css')
-</head>
-<body>
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rekomendasi Destinasi Wisata Keluarga</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    @vite('resources/css/app.css')
 </head>
 <body class="font-sans">
     <div class="relative min-h-screen">
@@ -32,7 +24,7 @@
                         <a href="#" class="text-white hover:text-gray-200">Beranda</a>
                         <a href="{{ url('/layanan') }}" class="text-white hover:text-gray-200">Layanan</a>
                         <a href="{{ url('/rekomendasi') }}" class="text-white hover:text-gray-200">Rekomendasi</a>
-                        <a href="{{ url('/about') }}" class="text-white hover:text-gray-200" >Kontak</a>
+                        <a href="{{ url('/about') }}" class="text-white hover:text-gray-200">Kontak</a>
                     </div>
                 </div>
             </nav>
@@ -66,57 +58,53 @@
 
                 <!-- Recommendations Section -->
                 <div class="mb-12">
-    <h2 class="text-2xl font-bold text-white mb-6">Rekomendasi Wisata</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="\assets\img\TS.jpg" alt="Air Terjun" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <h3 class="font-bold text-lg mb-2">Air Terjun Indah</h3>
-                <p class="text-gray-600 mb-4">Nikmati keindahan alam air terjun yang memukau</p>
-                <a href="{{ url('/ts') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-            </div>
-        </div>
+                    <h2 class="text-2xl font-bold text-white mb-6">Rekomendasi Wisata</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="\assets\img\TS.jpg" alt="Air Terjun" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2">Air Terjun Indah</h3>
+                                <p class="text-gray-600 mb-4">Nikmati keindahan alam air terjun yang memukau</p>
+                                <a href="{{ url('/ts') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
+                            </div>
+                        </div>
 
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="\assets\img\Gorengan.jpg" alt="Kuliner" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <h3 class="font-bold text-lg mb-2">Wisata Kuliner</h3>
-                <p class="text-gray-600 mb-4">Jelajahi aneka ragam kuliner khas daerah</p>
-                <a href="{{ url('/mendoan') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-            </div>
-        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="\assets\img\Gorengan.jpg" alt="Kuliner" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2">Wisata Kuliner</h3>
+                                <p class="text-gray-600 mb-4">Jelajahi aneka ragam kuliner khas daerah</p>
+                                <a href="{{ url('/mendoan') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
+                            </div>
+                        </div>
 
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="\assets\img\Rumah Lengger.jpg" alt="Museum" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <h3 class="font-bold text-lg mb-2">Rumah Lengger Banyumas</h3>
-                <p class="text-gray-600 mb-4">Jelajahi Keindahan Tradisi, Rasakan Pesona Budaya!</p>
-                <a href="{{ url('/wayang') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-            </div>
-        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="\assets\img\Rumah Lengger.jpg" alt="Museum" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2">Rumah Lengger Banyumas</h3>
+                                <p class="text-gray-600 mb-4">Jelajahi Keindahan Tradisi, Rasakan Pesona Budaya!</p>
+                                <a href="{{ url('/wayang') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
+                            </div>
+                        </div>
 
-        <!-- Card 4 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="\assets\img\JenSud (2).jpeg" alt="Taman Hiburan" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <h3 class="font-bold text-lg mb-2">Museum Sejarah</h3>
-                <p class="text-gray-600 mb-4">Ayo Menapaktilasi Warisan Leluhur, Wisata Sejarah yang Penuh Cerita!</p>
-                <a href="{{ url('/jensud') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-            </div>
-        </div>
-    </div>
-</div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="\assets\img\JenSud (2).jpeg" alt="Taman Hiburan" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2">Museum Sejarah</h3>
+                                <p class="text-gray-600 mb-4">Ayo Menapaktilasi Warisan Leluhur, Wisata Sejarah yang Penuh Cerita!</p>
+                                <a href="{{ url('/jensud') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
 
                 <!-- Contact Form -->
                 <div class="bg-blue-500 rounded-lg p-6 shadow-lg">
                     <h2 class="text-2xl font-bold text-white mb-4">Masih Bingung? Butuh Konsultasi?</h2>
-                    <form class="space-y-4">
-                        <input type="text" placeholder="Nama" class="w-full p-2 rounded">
-                        <input type="email" placeholder="Email" class="w-full p-2 rounded">
-                        <textarea placeholder="Pesan" class="w-full p-2 rounded" rows="3"></textarea>
+                    <form id="contactForm" class="space-y-4">
+                        <input id="name" type="text" placeholder="Nama" class="w-full p-2 rounded">
+                        <input id="email" type="email" placeholder="Email" class="w-full p-2 rounded">
+                        <textarea id="message" placeholder="Pesan" class="w-full p-2 rounded" rows="3"></textarea>
                         <button type="submit" class="bg-white text-blue-500 px-6 py-2 rounded font-bold hover:bg-gray-100">Kirim</button>
                     </form>
                 </div>
@@ -130,7 +118,29 @@
             </footer>
         </div>
     </div>
-</body>
-</html>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman formulir default
+
+            // Ambil nilai input
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Validasi sederhana (opsional)
+            if (!name || !email || !message) {
+                alert('Harap isi semua bidang!');
+                return;
+            }
+
+            // Tampilkan notifikasi
+            alert(`Terima kasih, ${name}! Pesan Anda telah dikirim.`);
+
+            // Reset formulir
+            document.getElementById('contactForm').reset();
+        });
+    </script>
 </body>
 </html>

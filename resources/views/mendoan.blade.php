@@ -29,12 +29,11 @@
                 <div class="container mx-auto flex justify-between items-center">
                     <img src="\assets\img\LOGO_BANYUMAS-removebg-preview.png" alt="Logo" class="h-12">
                     <div class="hidden md:flex space-x-4">
-                        <a href="{{ url('/') }}" class="text-white hover:text-gray-200">Beranda</a>
+                        <a href="{{ url('/home') }}" class="text-white hover:text-gray-200">Beranda</a>
                         <a href="{{ url('/layanan') }}" class="text-white hover:text-gray-200">Layanan</a>
                         <a href="{{ url('/rekomendasi') }}" class="text-white hover:text-gray-200">Rekomendasi</a>
                         <a href="{{ url('/about') }}" class="text-white hover:text-gray-200" >Kontak</a>
                     </div>
-                    <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Login</button>
                 </div>
             </nav>
 
