@@ -3,27 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Destinasi Wisata Keluarga</title>
+    <link href="/dist/output.css" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
 <body>
-<div class="bg-cover bg-center h-screen">
-  <div class="flex justify-between items-center px-4 py-2 bg-white">
-    <div class="text-blue-500 font-bold">Beranda</div>
-    <div>Layanan</div>
-    <div>Rekomendasi</div>
-    <div>Kontak</div>
-  </div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Destinasi Wisata Keluarga</title>
+</head>
+<body class="font-sans">
+    <div class="relative min-h-screen">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="\assets\img\Foto.jpg" alt="Pemandangan alam" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="relative z-10 min-h-screen flex flex-col">
+            <!-- Navigation -->
+            <nav class="bg-transparent p-4">
+                <div class="container mx-auto flex justify-between items-center">
+                    <img src="\assets\img\LOGO_BANYUMAS-removebg-preview.png" alt="Logo" class="h-12">
+                    <div class="hidden md:flex space-x-4">
+                        <a href="{{ url('/') }}" class="text-white hover:text-gray-200">Beranda</a>
+                        <a href="{{ url('/layanan') }}" class="text-white hover:text-gray-200">Layanan</a>
+                        <a href="{{ url('/rekomendasi') }}" class="text-white hover:text-gray-200">Rekomendasi</a>
+                        <a href="{{ url('/about') }}" class="text-white hover:text-gray-200" >Kontak</a>
+                    </div>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Login</button>
+                </div>
+            </nav>
+
 
   <div class="bg-white p-6 shadow-md max-w-3xl mx-auto mt-10 rounded-lg">
     <h1 class="text-2xl font-bold mb-4">Monumen Jendral Sudirman</h1>
 
     <div class="grid grid-cols-2 gap-4">
       <div>
-        <img src="Foto-Foto/JenSud (1).jpeg" alt="Monumen Jendral Sudirman" class="w-full h-auto rounded-lg">
+        <img src="\assets\img\JenSud (1).jpeg" alt="Monumen Jendral Sudirman" class="w-full h-auto rounded-lg">
       </div>
       <div>
-        <img src="Foto-Foto/JenSud (2).jpeg" alt="Monumen Jendral Sudirman" class="w-full h-auto rounded-lg">
+        <img src="\assets\img\JenSud (2).jpeg" alt="Monumen Jendral Sudirman" class="w-full h-auto rounded-lg">
       </div>
     </div>
 

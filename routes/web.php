@@ -24,3 +24,27 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/layanan', function () {
+    return view('layanan');
+});
+
+Route::get('/mendoan', function () {
+    return view('mendoan');
+});
+
+Route::get('/ts', function () {
+    return view('ts');
+});
+
+Route::get('/rekomendasi', function () {
+    return view('rekomendasi');
+});
+
+Route::get('/jensud', function () {
+    return view('jensud');
+});
+
+Route::get('/wayang', function () {
+    return view('wayang');
+});

@@ -3,31 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mendoan</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Destinasi Wisata Keluarga</title>
+    <link href="/dist/output.css" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="bg-cover bg-center h-screen">
-        <header class="flex justify-between items-center px-4 py-2 bg-white">
-            <img src="Foto-Foto/LOGO_BANYUMAS-removebg-preview.png" alt="Logo" class="h-12">
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="Beranda.html" class="text-blue-500">Beranda</a></li>
-                    <li><a href="Layanan.html">Layanan</a></li>
-                    <li><a href="Rekomendasi.html">Rekomendasi</a></li>
-                    <li><a href="Kontak.html">Kontak</a></li>
-                </ul>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Destinasi Wisata Keluarga</title>
+</head>
+<body class="font-sans">
+    <div class="relative min-h-screen">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="\assets\img\Foto.jpg" alt="Pemandangan alam" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="relative z-10 min-h-screen flex flex-col">
+            <!-- Navigation -->
+            <nav class="bg-transparent p-4">
+                <div class="container mx-auto flex justify-between items-center">
+                    <img src="\assets\img\LOGO_BANYUMAS-removebg-preview.png" alt="Logo" class="h-12">
+                    <div class="hidden md:flex space-x-4">
+                        <a href="{{ url('/') }}" class="text-white hover:text-gray-200">Beranda</a>
+                        <a href="{{ url('/layanan') }}" class="text-white hover:text-gray-200">Layanan</a>
+                        <a href="{{ url('/rekomendasi') }}" class="text-white hover:text-gray-200">Rekomendasi</a>
+                        <a href="{{ url('/about') }}" class="text-white hover:text-gray-200" >Kontak</a>
+                    </div>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Login</button>
+                </div>
             </nav>
-            <a href="Login.html" class="bg-green-500 text-white px-4 py-2 rounded-md">Masuk</a>
-        </header>
 
         <div class="bg-white p-6 shadow-md max-w-3xl mx-auto mt-10 rounded-lg">
             <h1 class="text-2xl font-bold mb-4">Mendoan</h1>
             
             <div class="grid grid-cols-2 gap-4">
-                <img src="Foto-Foto/Mendo1.jpeg" alt="Mendoan 1" class="w-full h-auto rounded-lg">
-                <img src="Foto-Foto/Mendo2.jpeg" alt="Mendoan 2" class="w-full h-auto rounded-lg">
+                <img src="\assets\img\Mendo1.jpeg" alt="Mendoan 1" class="w-full h-auto rounded-lg">
+                <img src="\assets\img\Mendo2.jpeg" alt="Mendoan 2" class="w-full h-auto rounded-lg">
             </div>
 
             <div class="mt-6">
