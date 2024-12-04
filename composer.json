@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "laravel/laravel",
     "type": "project",
@@ -69,3 +70,5 @@
     "minimum-stability": "stable",
     "prefer-stable": true
 }
+=======
+>>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9

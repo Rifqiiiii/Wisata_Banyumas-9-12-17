@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\PenggunaResource\Pages;
-use App\Filament\Resources\PenggunaResource\RelationManagers;
-use App\Models\Pengguna;
+use App\Filament\Resources\KontakResource\Pages;
+use App\Filament\Resources\KontakResource\RelationManagers;
+use App\Models\Kontak;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,31 +13,28 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class PenggunaResource extends Resource
+class KontakResource extends Resource
 {
-    protected static ?string $model = Pengguna::class;
+    protected static ?string $model = Kontak::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-<<<<<<< HEAD
-=======
-    protected static ?string $navigationLabel = 'Pengguna';
-    
->>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-<<<<<<< HEAD
-                //
-=======
-                Forms\Components\TextInput::make('username')
+                Forms\Components\TextInput::make('nama')
                 ->required()
                 ->maxLength(255),
-                Forms\Components\TextInput::make('password')
-                ->required()
+                Forms\Components\TextInput::make('email')
+                ->required()    
+                ->placeholder('Masukan Email')
                 ->maxLength(255),
->>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
+                Forms\Components\TextInput::make('notelepon')
+                ->required()    
+                ->placeholder('Masukan Nomor HP')
+                ->maxLength(255)
+                ->label('Nomor Telepon'),
             ]);
     }
 
@@ -45,12 +42,9 @@ class PenggunaResource extends Resource
     {
         return $table
             ->columns([
-<<<<<<< HEAD
-                //
-=======
-                Tables\Columns\TextColumn::make('username'),
-                Tables\Columns\TextColumn::make('password'),
->>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
+                Tables\Columns\TextColumn::make('nama'),
+                Tables\Columns\TextColumn::make('email'),
+                Tables\Columns\TextColumn::make('notelepon'),
             ])
             ->filters([
                 //
@@ -75,9 +69,9 @@ class PenggunaResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListPenggunas::route('/'),
-            'create' => Pages\CreatePengguna::route('/create'),
-            'edit' => Pages\EditPengguna::route('/{record}/edit'),
+            'index' => Pages\ListKontaks::route('/'),
+            'create' => Pages\CreateKontak::route('/create'),
+            'edit' => Pages\EditKontak::route('/{record}/edit'),
         ];
     }
 }

@@ -167,7 +167,14 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+<<<<<<< HEAD
         App\Providers\Filament\AdminPanelProvider::class,
+=======
+<<<<<<< HEAD
+=======
+        App\Providers\Filament\WisataPanelProvider::class,
+>>>>>>> 259a1a2 (Progres Kedua)
+>>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),
 
