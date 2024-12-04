@@ -7,8 +7,8 @@
     <!-- Tambahkan link Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <form id="Loginform" class="bg-white p-8 rounded-lg shadow-md w-96">
+<body class="flex items-center justify-center min-h-screen bg-[url('/assets/bg.jpg')] bg-cover bg-center">
+<form id="Loginform" class="bg-white bg-opacity-50 p-8 rounded-lg shadow-md w-96">
         <div class="login-container">
             <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
             
