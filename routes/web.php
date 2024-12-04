@@ -13,12 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', function () {
-    return view('welcome');
-});
 
 Route::get('/', function () {
-    return view('index');
+    return view('login');
 });
 
 Route::get('/about', function () {
@@ -44,6 +41,11 @@ Route::get('/rekomendasi', function () {
 Route::get('/jensud', function () {
     return view('jensud');
 });
+
+Route::get('/home', function () {
+    return view('index');
+});
+
 
 Route::get('/wayang', function () {
     return view('wayang');

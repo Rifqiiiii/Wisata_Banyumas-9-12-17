@@ -8,8 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Pengguna extends Model
 {
     use HasFactory;
-<<<<<<< HEAD
-=======
 
     protected $fillable = [
         'username',
@@ -21,5 +19,4 @@ class Pengguna extends Model
         return $this->belongsTo(pengguna::class);
     }
     
->>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
 }

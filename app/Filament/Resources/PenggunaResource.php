@@ -18,26 +18,19 @@ class PenggunaResource extends Resource
     protected static ?string $model = Pengguna::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-<<<<<<< HEAD
-=======
     protected static ?string $navigationLabel = 'Pengguna';
     
->>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-<<<<<<< HEAD
-                //
-=======
                 Forms\Components\TextInput::make('username')
                 ->required()
                 ->maxLength(255),
                 Forms\Components\TextInput::make('password')
                 ->required()
                 ->maxLength(255),
->>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
             ]);
     }
 
@@ -45,12 +38,8 @@ class PenggunaResource extends Resource
     {
         return $table
             ->columns([
-<<<<<<< HEAD
-                //
-=======
                 Tables\Columns\TextColumn::make('username'),
                 Tables\Columns\TextColumn::make('password'),
->>>>>>> 1826384da3d10f3738ecd556cdf1d6aa715084c9
             ])
             ->filters([
                 //

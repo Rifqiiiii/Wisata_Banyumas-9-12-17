@@ -11,7 +11,7 @@ class Kontak extends Model
     protected $fillable = [
         'nama',
         'email',
-        'notelepon'
+        'pesan'
     ];
     public function kontak():BelongsTo
     {
