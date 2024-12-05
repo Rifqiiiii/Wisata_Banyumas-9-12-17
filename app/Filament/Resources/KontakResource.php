@@ -17,26 +17,16 @@ class KontakResource extends Resource
 {
     protected static ?string $model = Kontak::class;
 
-    
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    
-    protected static ?string $navigationLabel = 'Kontak';
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('nama')
-                ->required()
-                ->maxLength(255),
-                Forms\Components\TextInput::make('email')
-                ->required()    
-                ->placeholder('Masukan Email')
-                ->maxLength(255),
-                Forms\Components\RichEditor::make('pesan')
-                ->required()    
-                ->placeholder('Masukan Pesan')
-                ->maxLength(255)
-                ->label('Pesan'),
+                Forms\Components\TextInput::make('nama'),
+                Forms\Components\TextInput::make('email'),
+                Forms\Components\FileUpload::make('pesan'),
+
             ]);
     }
 
@@ -46,9 +36,7 @@ class KontakResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('nama'),
                 Tables\Columns\TextColumn::make('email'),
-                Tables\Columns\TextColumn::make('pesan')
-                ->formatStateUsing(fn (string $state): string => strip_tags($state))
-                ->label('Pesan'),
+                Tables\Columns\ImageColumn::make('pesan')
             ])
             ->filters([
                 //
