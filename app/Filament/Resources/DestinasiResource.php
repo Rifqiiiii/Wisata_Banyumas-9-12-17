@@ -26,10 +26,8 @@ class DestinasiResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('nama_wisata'),
-                Forms\Components\TextInput::make('lokasi_wisata'),
-                Forms\Components\TextInput::make('harga_tiket'),
-                Forms\Components\TextInput::make('fasilitas'),
-                Forms\Components\RichEditor::make('deskripsi'),
+                Forms\Components\TextInput::make('deskripsi'),
+                Forms\Components\FileUpload::make('foto'),
 
             ]);
     }
@@ -39,12 +37,9 @@ class DestinasiResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('nama_wisata'),
-                Tables\Columns\TextColumn::make('lokasi_wisata'),
-                Tables\Columns\TextColumn::make('harga_tiket'),
-                Tables\Columns\TextColumn::make('fasilitas'),
-                Tables\Columns\TextColumn::make('deskripsi')
-                ->formatStateUsing(fn (string $state): string => strip_tags($state))
-                ->label('deskripsi'),
+                Tables\Columns\TextColumn::make('deskripsi'),
+                Tables\Columns\ImageColumn::make('foto')
+                ->disk('public'),
             ])
             ->filters([
                 //

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Destinasi;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +51,5 @@ Route::get('/home', function () {
 Route::get('/wayang', function () {
     return view('wayang');
 });
+
+Route::get('/destinasi', Destinasi::class);

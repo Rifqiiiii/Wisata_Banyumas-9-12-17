@@ -10,9 +10,7 @@ class Destinasi extends Model
     use HasFactory;
     protected $fillable = [
         'nama_wisata',
-        'lokasi_wisata',
         'deskripsi',
-        'harga_tiket',
-        'fasilitas'
+        'foto'
     ];
 }

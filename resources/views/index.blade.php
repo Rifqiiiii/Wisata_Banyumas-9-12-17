@@ -57,46 +57,7 @@
                 </div>
 
                 <!-- Recommendations Section -->
-                <div class="mb-12">
-                    <h2 class="text-2xl font-bold text-white mb-6">Rekomendasi Wisata</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                            <img src="\assets\img\TS.jpg" alt="Air Terjun" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="font-bold text-lg mb-2">Air Terjun Indah</h3>
-                                <p class="text-gray-600 mb-4">Nikmati keindahan alam air terjun yang memukau</p>
-                                <a href="{{ url('/ts') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                            <img src="\assets\img\Gorengan.jpg" alt="Kuliner" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="font-bold text-lg mb-2">Wisata Kuliner</h3>
-                                <p class="text-gray-600 mb-4">Jelajahi aneka ragam kuliner khas daerah</p>
-                                <a href="{{ url('/mendoan') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                            <img src="\assets\img\Rumah Lengger.jpg" alt="Museum" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="font-bold text-lg mb-2">Rumah Lengger Banyumas</h3>
-                                <p class="text-gray-600 mb-4">Jelajahi Keindahan Tradisi, Rasakan Pesona Budaya!</p>
-                                <a href="{{ url('/wayang') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                            <img src="\assets\img\JenSud (2).jpeg" alt="Taman Hiburan" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="font-bold text-lg mb-2">Museum Sejarah</h3>
-                                <p class="text-gray-600 mb-4">Ayo Menapaktilasi Warisan Leluhur, Wisata Sejarah yang Penuh Cerita!</p>
-                                <a href="{{ url('/jensud') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Detail</a>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
+               @livewire('Destinasi')
 
                 <!-- Contact Form -->
                 <div class="bg-blue-500 rounded-lg p-6 shadow-lg">

@@ -14,10 +14,8 @@ return new class extends Migration
         Schema::create('destinasis', function (Blueprint $table) {
             $table->id();
             $table->string('nama_wisata');
-            $table->string('lokasi_wisata');
             $table->string('deskripsi');
-            $table->string('harga_tiket');
-            $table->string('fasilitas');
+            $table->string('foto');
             $table->timestamps();
         });
     }
